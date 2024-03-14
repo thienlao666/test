@@ -8,10 +8,10 @@
 </head>
 
 <body>
-<header role="header" inert>
-    <details role="details" inert>
-        <summary role="info" inert>Эта страница про доступность в веб (и вообще)</summary>
-        <p inert>
+<header aria-hidden="true" tab-index="6" role="header" >
+    <details aria-hidden="true" tab-index="6" role="details">
+        <summary aria-hidden="true" tab-index="6" role="info">Эта страница про доступность в веб (и вообще)</summary>
+        <p aria-hidden="true" tab-index="6">
             Одна из характеристик современного сайта — доступность
             (accessibility). Это означает, что сайтом могут без проблем
             пользоваться люди с инвалидностью. В этой статье разберёмся с
@@ -79,7 +79,7 @@
                 Как установить язык сайта и его отдельных фрагментов, и
                 почему это важно.
             </h3>
-            <a href="https://doka.guide/a11y/site-language/"
+            <a href="https://doka.guide/a11y/site-language/" tabindex="1"
             >Язык сайта и содержимого</a
             >
         </section>
@@ -89,7 +89,7 @@
                 Разбираемся, как описывать картинки так, чтобы были довольны
                 даже поисковые роботы.
             </h3>
-            <a href="https://doka.guide/a11y/how-to-describe-pictures/"
+            <a href="https://doka.guide/a11y/how-to-describe-pictures/" tabindex="2"
             >Как описывать картинки</a
             >
         </section>
@@ -99,7 +99,7 @@
                 Рекомендации по созданию доступных форм: валидация, элементы
                 управления и их атрибуты.
             </h3>
-            <a href="https://doka.guide/a11y/accessible-forms/"
+            <a href="https://doka.guide/a11y/accessible-forms/" tabindex="3"
             >Доступные формы</a
             >
         </section>
@@ -113,7 +113,7 @@
         </h2>
 
         <h3>Попробуйте его открыть, пользуясь скринридером</h3>
-        <button type="button" aria-label="Открыть модальное окно" onclick="window.myDialog.showModal()">
+        <button type="button" aria-label="Открыть модальное окно" onclick="window.myDialog.showModal()" tabindex="4">
             Открыть как модалку
         </button>
         <dialog id="myDialog" aria-labelledby="dialog-name" aria-describedby="modal-text">
@@ -131,7 +131,7 @@
 </main>
 
 <footer role="contentinfo">
-    <a href="https://doka.guide/a11y/chto-takoe-a11y/"
+    <a href="https://doka.guide/a11y/chto-takoe-a11y/" tabindex="5"
     >Оригинальная статья на Доке</a
     >
 </footer>
