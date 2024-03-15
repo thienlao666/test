@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Доступная страница про доступность</title>
 </head>
-
 <body>
-<header aria-hidden="true" tab-index="6" role="header" >
-    <details aria-hidden="true" tab-index="6" role="details">
-        <summary aria-hidden="true" tab-index="6" role="info">Эта страница про доступность в веб (и вообще)</summary>
-        <p aria-hidden="true" tab-index="6">
+<header>
+    <details>
+        <summary>Эта страница про доступность в веб (и вообще)</summary>
+        <p>
             Одна из характеристик современного сайта — доступность
             (accessibility). Это означает, что сайтом могут без проблем
             пользоваться люди с инвалидностью. В этой статье разберёмся с
@@ -22,10 +21,7 @@
         </p>
     </details>
 </header>
-<nav role="navigation">
-</nav>
-
-<main role="main">
+<div role="main">
     <h1>
         Вместо длинного слова «доступность» используют нумероним «a11y».
         В нём зашифровано исходное слово «accessibility». Оно начинается
@@ -33,14 +29,12 @@
         находится ещё 11 других. Читается просто — «а́лли» («ally») или
         «эй-элевен-уай» («a-eleven-y»).
     </h1>
-
     <img
             src="https://doka.guide/a11y/chto-takoe-a11y/images/0-696w.webp"
-            alt="картинка про allu"
+            alt="В слове «Accessibility» выделено цветом и пронумеровано 11 букв между первым и последним знаками. Буквы объединены фигурной скобкой, под ней подпись «a11y»."
     />
-
-    <section aria-labelledby="intro-heading">
-        <h2 id="intro-heading">Принципы</h2>
+    <section role="list">
+        <h2>Принципы</h2>
         <p>
             Веб-доступность опирается на четыре принципа. Они описывают,
             какими должны быть веб-интерфейсы и их отдельные элементы и
@@ -70,50 +64,43 @@
             </li>
         </ul>
     </section>
-
-    <aside rolde="aside">
-        <h2 id="aside">Три очень полезных статьи</h2>
-
-        <section aria-labelledby="first-site">
-            <h3 id="first-site">
+    <h2>Три очень полезных статьи</h2>
+    <section role="list">
+        <section role="listitem">
+            <h3>
                 Как установить язык сайта и его отдельных фрагментов, и
                 почему это важно.
             </h3>
-            <a href="https://doka.guide/a11y/site-language/" tabindex="1"
+            <a href="https://doka.guide/a11y/site-language/"
             >Язык сайта и содержимого</a
             >
         </section>
-
-        <section aria-labelledby="second-site">
-            <h3 id="second-site">
+        <section role="listitem">
+            <h3>
                 Разбираемся, как описывать картинки так, чтобы были довольны
                 даже поисковые роботы.
             </h3>
-            <a href="https://doka.guide/a11y/how-to-describe-pictures/" tabindex="2"
+            <a href="https://doka.guide/a11y/how-to-describe-pictures/"
             >Как описывать картинки</a
             >
         </section>
-
-        <section aria-labelledby="third-site">
-            <h3 id="third-site">
+        <section role="listitem">
+            <h3>
                 Рекомендации по созданию доступных форм: валидация, элементы
                 управления и их атрибуты.
             </h3>
-            <a href="https://doka.guide/a11y/accessible-forms/" tabindex="3"
+            <a href="https://doka.guide/a11y/accessible-forms/"
             >Доступные формы</a
             >
         </section>
-    </aside>
-
-
-    <section aria-labelledby="modal-heading">
+    </section>
+    <section role="dialog">
         <h2>
             В этом разделе находится модальное окно в котором есть форма
             обратной связи!
         </h2>
-
         <h3>Попробуйте его открыть, пользуясь скринридером</h3>
-        <button type="button" aria-label="Открыть модальное окно" onclick="window.myDialog.showModal()" tabindex="4">
+        <button type="button" onclick="window.myDialog.showModal()">
             Открыть как модалку
         </button>
         <dialog id="myDialog" aria-labelledby="dialog-name" aria-describedby="modal-text">
@@ -128,10 +115,9 @@
             </form>
         </dialog>
     </section>
-</main>
-
-<footer role="contentinfo">
-    <a href="https://doka.guide/a11y/chto-takoe-a11y/" tabindex="5"
+</div>
+<footer>
+    <a href="https://doka.guide/a11y/chto-takoe-a11y/"
     >Оригинальная статья на Доке</a
     >
 </footer>
